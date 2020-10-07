@@ -1,5 +1,5 @@
 terraform {
-  # experiments      = [sensitive_variables]
+  experiments      = [sensitive_variables]
   required_version = ">=0.14.0-alpha20201007"
 }
 
