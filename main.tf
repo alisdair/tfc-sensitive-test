@@ -25,5 +25,6 @@ output "pet" {
 }
 
 output "password" {
-  value = var.password
+  value     = var.password
+  sensitive = true
 }
