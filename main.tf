@@ -5,7 +5,7 @@ terraform {
 
 variable "password" {
   type      = string
-  # sensitive = true
+  sensitive = true
   default   = "hunter2"
 }
 
