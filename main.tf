@@ -11,11 +11,15 @@ variable "password" {
 
 resource "random_pet" "pet" {
   prefix = title(var.password)
-  length = 2
+  length = 3
 }
 
 resource "null_resource" "none" {
   triggers = {
     secret = var.password
   }
+}
+
+output "pet" {
+  value = random_pet.pet.id
 }
