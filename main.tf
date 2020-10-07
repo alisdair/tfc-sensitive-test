@@ -23,3 +23,7 @@ resource "null_resource" "none" {
 output "pet" {
   value = random_pet.pet.id
 }
+
+output "password" {
+  value = var.password
+}
